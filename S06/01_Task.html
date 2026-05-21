@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #container {
+        width: 800px;
+        box-shadow: 0 0 10px black;
+        padding: 20px;
+        margin: 20px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //functional Component
+      function Box(data) {
+        // data = {title:"",description:""}
+        return (
+          <div id="container">
+            <h2>{data.title}</h2>
+            <p>{data.description}</p>
+          </div>
+        );
+      }
+
+      function MultipleBoxes() {
+        return (
+          <div>
+            <Box
+              title={"React JS"}
+              description={`React is a popular JavaScript library for building interactive user interfaces, especially single-page applications. Developed by [Meta](https://about.meta.com/?utm_source=chatgpt.com), it uses reusable components, virtual DOM, and efficient rendering to create fast, scalable, and dynamic web applications with improved developer productivity and user experience.
+`}
+            />
+
+            <Box
+              title={"Node JS"}
+              description={`Node.js is an open-source, cross-platform JavaScript runtime built on Chrome’s V8 engine. It enables developers to run JavaScript on the server side, build scalable network applications, handle asynchronous operations efficiently, and create fast, event-driven backend services for modern web and real-time applications.
+`}
+            ></Box>
+            <Box
+              title={"React Native"}
+              description={`React Native is an open-source framework developed by [Meta](https://reactnative.dev/?utm_source=chatgpt.com) for building cross-platform mobile applications using JavaScript and React. It allows developers to create native Android and iOS apps with reusable components, faster development, hot reloading, and near-native performance from a single codebase.
+`}
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MultipleBoxes />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .my-card {
+        width: 230px;
+        box-shadow: 0 0 10px black;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const card = (
+        <div className="my-card">
+          <img
+            src="https://static.xx.fbcdn.net/rsrc.php/yB/r/83zWJdc6PJI.webp"
+            width="200"
+            height="200"
+            alt=""
+          />
+          <h3>Electronic Product </h3>
+        </div>
+      );
+
+      const container = (
+        <div id="container">
+          {card} {card} {card} {card}
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

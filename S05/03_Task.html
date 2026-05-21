@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #container {
+        width: 800px;
+        box-shadow: 0 0 10px black;
+        padding: 20px;
+        margin: 20px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //functional Component
+      function Box() {
+        return (
+          <div id="container">
+            <h2>React JS</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+              odit accusamus praesentium, dolore molestiae ad autem blanditiis
+              facere magnam nemo doloribus corporis dolores iure quidem aliquam
+              totam repudiandae at accusantium.
+            </p>
+          </div>
+        );
+      }
+
+      function MultipleBoxes() {
+        return (
+          <div>
+            <Box />
+            <Box> </Box>
+            <Box />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MultipleBoxes />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

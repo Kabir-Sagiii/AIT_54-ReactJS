@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //JSX Element
+      var button = <button> JSX Button in React JS </button>;
+      var img = (
+        <img
+          src="https://static.cdninstagram.com/rsrc.php/yR/r/92ZsVHNkyvf.webp"
+          width="200"
+          height="200"
+        />
+      );
+
+      //ReactDOM
+      ReactDOM.render([img, button], document.getElementById("root"));
+    </script>
+  </body>
+</html>

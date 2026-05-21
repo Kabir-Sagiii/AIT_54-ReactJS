@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+}
+#nav {
+  height: 15vh;
+  box-shadow: 0 0 10px black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title h1 {
+  font-size: 42px;
+  color: tomato;
+}
+#menus {
+  display: flex;
+  align-items: center;
+}
+
+#menus a {
+  color: green;
+  font-size: 17px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.main {
+  height: 85vh;
+  background-image:
+    linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20241210/pngtree-adorable-happy-kids-shopping-with-colorful-bags-in-a-mall-image_16746860.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main h1 {
+  font-size: 72px;
+  color: yellow;
+  text-shadow: 0 0 10px black;
+}
+
+.main p {
+  width: 800px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.footer {
+  background: #1e1e2f;
+  color: #ffffff;
+  padding: 60px 10% 20px;
+
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-brand h2 {
+  color: #ffb703;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.footer-brand p {
+  line-height: 1.7;
+  color: #d1d1d1;
+}
+
+.footer-links h3,
+.footer-newsletter h3 {
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #d1d1d1;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ffb703;
+  padding-left: 5px;
+}
+
+.footer-newsletter p {
+  color: #d1d1d1;
+  margin-bottom: 15px;
+}
+
+.newsletter-box {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.newsletter-box button {
+  background: #ffb703;
+  color: #000;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.newsletter-box button:hover {
+  background: #ffaa00;
+}
+
+.footer-bottom {
+  border-top: 1px solid #3a3a50;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  color: #b5b5b5;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .newsletter-box {
+    flex-direction: column;
+  }
+
+  .newsletter-box button {
+    width: 100%;
+  }
+}

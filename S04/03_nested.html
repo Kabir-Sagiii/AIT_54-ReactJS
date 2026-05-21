@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="box"></div>
+    <script>
+      const h2 = React.createElement("h2", null, "React is very very easy");
+
+      const p = React.createElement(
+        "p",
+        null,
+        "React JS is looking much more easier then what we thought",
+      );
+
+      const div = React.createElement("div", { id: "container" }, [h2, p]);
+
+      ReactDOM.render(div, document.getElementById("box"));
+    </script>
+  </body>
+</html>

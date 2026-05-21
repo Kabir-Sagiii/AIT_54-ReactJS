@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const div = (
+        <div>
+          <h2>React with JSX</h2>
+          <p>Reacct is looking ekdum easy now</p>
+        </div>
+      );
+
+      //ReactDOM
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>

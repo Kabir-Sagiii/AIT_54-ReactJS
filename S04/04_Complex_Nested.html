@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var section = React.createElement("section", null, [
+        React.createElement(
+          "div",
+          null,
+          React.createElement(
+            "img",
+            {
+              src: "https://static.cdninstagram.com/rsrc.php/yR/r/92ZsVHNkyvf.webp",
+              width: "300",
+              height: "300",
+            },
+            null,
+          ),
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement("h2", null, "React is Complex"),
+        ),
+      ]);
+
+      ReactDOM.render(section, document.getElementById("root"));
+    </script>
+  </body>
+</html>

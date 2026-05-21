@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      const h1 = React.createElement("h1", null, "React JS Core Developer");
+
+      const p = React.createElement(
+        "p",
+        null,
+        ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore commodi
+  soluta doloremque cum deleniti earum numquam alias praesentium nemo velit?
+  Laudantium aspernatur blanditiis maxime, optio eligendi quam placeat quidem
+  sit numquam nisi dolorum maiores soluta illum asperiores amet nesciunt,
+  accusamus alias rem corporis, culpa similique quae exercitationem? Fuga,
+  voluptate facilis!
+       `,
+      );
+
+      const img = React.createElement(
+        "img",
+        {
+          src: "https://static.cdninstagram.com/rsrc.php/yR/r/92ZsVHNkyvf.webp",
+          width: "300",
+          height: "300",
+        },
+        null,
+      );
+
+      ReactDOM.render(
+        [img, h1, p, img, h1, h1, p, img],
+        document.getElementById("root"),
+      );
+    </script>
+  </body>
+</html>

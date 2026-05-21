@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .my-card {
+        width: 230px;
+        box-shadow: 0 0 10px black;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createCard(name, image) {
+        return (
+          <div className="my-card">
+            <img src={image} width="200" height="200" alt="" />
+            <h3> {name} </h3>
+          </div>
+        );
+      }
+
+      function app() {
+        return (
+          <div id="container">
+            {createCard(
+              "Rohit Verma",
+              "https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg",
+            )}
+            {createCard(
+              "Virat Singh",
+              "https://tse1.mm.bing.net/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain&o=7&rm=3",
+            )}
+            {createCard(
+              "Tilak Sharma",
+              "https://i.pinimg.com/originals/90/c0/51/90c051810494297069df2b6b9a450c15.jpg",
+            )}
+            {createCard(
+              "Mahi Kumar",
+              "https://png.pngtree.com/background/20230329/original/pngtree-confident-young-businessman-stood-outside-office-vector-picture-image_2187609.jpg",
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
