@@ -1,0 +1,25 @@
+.main {
+  height: 85vh;
+  background-image:
+    linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20241210/pngtree-adorable-happy-kids-shopping-with-colorful-bags-in-a-mall-image_16746860.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main h1 {
+  font-size: 72px;
+  color: yellow;
+  text-shadow: 0 0 10px black;
+}
+
+.main p {
+  width: 800px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
