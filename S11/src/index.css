@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dummy-title {
+  padding: 20px;
+}
+button {
+  padding: 11px 30px;
+}
