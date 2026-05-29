@@ -1,6 +1,0 @@
-Es6 Module Pattern ( export and import) : Javascript Concept
-============================================================
-url
-
-
-
